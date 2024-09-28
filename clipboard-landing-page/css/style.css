@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.8rem;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    padding: 0 4rem;
+}
+
+h1, h2, h3 {
+    color: var(--DarkGrayishBlue);
+}
+
+p {
+    color: var(--GrayishBlue);
+    line-height: 2.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
+}
+
+section img {
+    width: 60%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.main-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.main-content img {
+    margin-bottom: 4rem;
+}
+
+.text-content {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 670px;
+}
+
+.text-content h1 {
+    font-size: 3.8rem;
+}
+
+.text-content h1, .text-content h2 {
+    margin-bottom: 1.1rem;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.download-buttons button {
+    padding: 1.8rem 2.5rem;
+    border-radius: 40px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    border-bottom-style: solid;
+    cursor: pointer;
+    transition: opacity ease-out 0.2s;
+    min-height: 49px;
+}
+
+.download-buttons button:active {
+    border: none;
+}
+
+.download-buttons button:hover {
+    opacity: 0.8;
+}
+
+.download-buttons button:first-child {
+    background-color: var(--StrongCyan);
+    border-bottom-color: hsl(171, 64%, 33%);
+    box-shadow: 0px 4px 15px hsla(171, 72%, 47%, 0.459);
+}
+
+.download-buttons button:last-child {
+    background-color: var(--LightBlue);
+    border-bottom-color: hsl(233, 45%, 50%);
+    box-shadow: 0px 4px 15px hsla(233, 45%, 50%, 0.459);
+}
+
+.features-section .text-content {
+    margin-bottom: 10rem;
+}
+
+.features-img-text {
+    display: flex;
+    align-items: center;
+    gap: 16%;
+}
+
+.features-img-text img {
+    margin-left: -16%;
+}
+
+.features-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 3rem;
+}
+
+.features-info p {
+    font-size: 1.7rem;
+}
+
+.feature-item h3 {
+    margin-bottom: 1rem;
+}
+
+.workflow-section {
+    gap: 2rem;
+}
+
+.workflow-section .tools-list {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5rem;
+}
+
+.workflow-section .tools-list .tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    gap: 1.5rem;
+}
+
+.workflow-section .tools-list .tool-item p {
+    font-size: 1.7rem;
+}
+
+.workflow-section .tools-list .tool-item .tool-item-img {
+    width: 45px;
+    height: 40px;
+}
+
+.workflow-section .tools-list .tool-item .tool-item-img img {
+    width: 100%;
+}
+
+.companies-section {
+    padding: 3rem 6rem;
+    flex-direction: row;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+.companies-section img {
+    max-width: 150px;
+    min-width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.companies-section img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px; 
+    padding: 5rem;
+}
+
+.logo-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+footer img {
+    max-width: 55px;
+}
+
+.footer-links {
+    height: 59px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem 3rem;
+    width: 360px;
+}
+
+.footer-links a {
+    font-size: 1.3rem;
+    color: var(--DarkGrayishBlue);
+    transition: color ease-out 0.3s;
+}
+
+.footer-links a:hover{
+    color: var(--StrongCyan);
+}
+
+.footer-social-medias a:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.footer-social-medias a {
+    transition: all ease-out 0.3s;
+}
+
+.footer-social-medias a:hover {
+    color: var(--StrongCyan);
+}
+
+.attribution { 
+    font-size: 1.1rem;
+    text-align: center; 
+    width: 125px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 850px) {
+    html {
+        font-size: 55%;
+    }
+
+    .main-content {
+        padding: 9rem 0;
+        width: 100%;
+    }
+
+    .main-content img {
+        width: 90px;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    .features-img-text {
+        flex-direction: column;
+        gap: 6rem;
+        text-align: center;
+    }
+
+    .features-img-text img {
+        margin: 0;
+    }
+
+    .workflow-section .tools-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workflow-section .tools-list .tool-item {
+        width: 100%;
+    }
+
+    .companies-section {
+        padding: 0 3rem;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+        padding: 5rem 0;
+    }
+
+    .logo-links {
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+        width: 220px;
+    }
+
+    .footer-links {
+        flex-wrap: nowrap;
+        width: 100%;
+        align-items: center;
+        gap: 2rem;
+        height: auto;
+    }
+}
