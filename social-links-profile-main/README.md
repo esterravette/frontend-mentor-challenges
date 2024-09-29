@@ -6,10 +6,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   ![Desktop Design](./design/destkop-design.jpg)
 
 ## 🎯 The Challenge
+This small project consists of building a profile for sharing social links.
 
 Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size.
 - See hover states for all interactive elements on the page.
 
 ## 🚀 Built With
